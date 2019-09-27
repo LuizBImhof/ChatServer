@@ -150,14 +150,15 @@ public class Server {
 
     private static String generateHtml() throws IOException {
 
-        String html = "<html lang=\"en\">" +
-                "<head>" +
-                "<meta charset=\"UTF-8\">" +
-                "<title>Chat</title>" +
-                "</head>" +
-                "<body>" +
-                "<div>" +
-                "<textarea readonly style=\"width:100%; height:50%\">";
+        String html = "<!DOCTYPE HTML>\n" +
+                "<html lang=\"en\">\n" +
+                "<head>\n" +
+                "<meta charset=\"UTF-8\">\n" +
+                "<title>Chat</title>\n" +
+                "</head>\n" +
+                "<body>\n" +
+                "<div>\n" +
+                "<textarea readonly style=\"width:100%; height:50%\">\n";
         for (Message i : messages) {
             if (i.toString().isEmpty()){
 
