@@ -16,8 +16,9 @@ public class Message {
      * @param message is the message to show
      */
     public Message(String user, String message) {
-        this.user = user;
-        this.message = message;
+
+        this.user = user.replace('+', ' ').trim();
+        this.message = message.replace('+', ' ').trim();
     }
 
     /**
